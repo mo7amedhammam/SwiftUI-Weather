@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @State private var isNight = false
     @State private var pushed : Bool? = false
+    var xx = APIs()
 
     var body: some View {
         NavigationView {
@@ -24,6 +25,13 @@ struct ContentView: View {
                     mainTemperatureView(imageName: isNight ? "moon.stars.fill" : "cloud.sun.bolt.fill", temperature: 13)
                     
                 }.padding(.bottom , 40)
+                    .onAppear{
+                        print("**** on appear *****")
+                                                self.xx.userRegisteration(Email: "moh@mail.com", Phone: "00001111000", Password: "0011", Name: "moh", UserTypeId: 2) { error, status, message in
+                            print("loggedin")
+                            
+                        }
+                    }
                 
                 HStack (spacing: 20){
                     WeatherDayView(dayOfWeek: "mon", imageName: "cloud.rain.fill", temprature: 15)
