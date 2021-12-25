@@ -45,6 +45,7 @@
 		23E2213C15114FBA2374CD6C /* Pods_SwiftUI_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2901F9925AE47FD03A27B8 /* Pods-SwiftUI-Weather-SwiftUI-WeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Weather-SwiftUI-WeatherUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Weather-SwiftUI-WeatherUITests/Pods-SwiftUI-Weather-SwiftUI-WeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7313DD2DEB2D9094950A441E /* Pods-SwiftUI-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Weather.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Weather/Pods-SwiftUI-Weather.release.xcconfig"; sourceTree = "<group>"; };
+		900935092777BB8000679100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9067F2F92775F0BC009E5E12 /* creatUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creatUserModel.swift; sourceTree = "<group>"; };
 		9067F2FC277651E5009E5E12 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		9067F2FE277651F5009E5E12 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 		90EB178D276B54F900E93E16 /* SwiftUI-Weather */ = {
 			isa = PBXGroup;
 			children = (
+				900935092777BB8000679100 /* Info.plist */,
 				9067F2FB277651C5009E5E12 /* service */,
 				90EB178E276B54F900E93E16 /* SwiftUI_WeatherApp.swift */,
 				90EB1790276B54F900E93E16 /* ContentView.swift */,
@@ -595,6 +597,7 @@
 				DEVELOPMENT_TEAM = 5S2882FKQQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Weather/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -625,6 +628,7 @@
 				DEVELOPMENT_TEAM = 5S2882FKQQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Weather/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

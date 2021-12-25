@@ -32,15 +32,27 @@ class APIs : NSObject {
         
         let url = URLs.CreateUser
         //        let header = [ "content-type" : "application/json"  , "Authorization" : Helper.getAccessToken() ]
-         AF.request(url, method: .post, parameters: parameters,encoding: JSONEncoding.default, headers: header)
+         AF.request(url, method: .post, parameters: parameters, headers: header)
             .responseJSON{ response in
+                print("response is >>>>>>>>>>>>>")
+
+                print(response)
+       
+                print("data is >>>>>>>>>>>>>")
+
+                print(response.data!)
                 
+                print("result is >>>>>>>>>>>>>")
+
+                print(response.result)
                 do{
                     let user = try JSONDecoder().decode(CreatUserMode.self, from: response.data!)
                     userobj = user
-                    debugPrint(response.data!)
+//                    debugPrint(response.data!)
                     print("json is >>>>>>>>>>>>>")
-                    
+                    print(user)
+                    print(userobj?.email ?? "ema")
+
                     print(userobj!)
                     
                 } catch{
@@ -55,7 +67,7 @@ class APIs : NSObject {
 //                    let json = JSON(value)
 //                    print(json)
 //
-//                    if json["StatusCode"] == 0 && json["Message"] == "Registration done successfully "{
+//                    if json["Success"] == 0 && json["Message"] == "Phone and email already registed "{
 //                        completion(nil , 0 ,json["Message"].string ?? "")
 //                    } else {
 //                        completion(nil , -1 ,json["Message"].string ?? "")

@@ -34,7 +34,7 @@ let log = APIs()
                             .cornerRadius(5.0)
                             .padding(.bottom, 20)
                             .onAppear{
-                                self.log.userRegisteration(Email: "moh@mail.com", Phone: "00001111000", Password: "0011", Name: "moh", UserTypeId: 2) { error, status, message in
+                                self.log.userRegisteration(Email: "moham@mail.com", Phone: "00001111001", Password: "0011", Name: "moha", UserTypeId: 2) { error, status, message in
                                     print("loggedin")
                                     
                                 }

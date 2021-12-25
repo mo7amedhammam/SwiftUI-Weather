@@ -21,6 +21,10 @@ struct CreatUserMode: Codable {
     }
 }
 
+
+
+
+
 // MARK: - WeatherModelElement
 struct WeatherModelElement: Codable {
     let date: String
